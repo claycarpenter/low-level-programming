@@ -9,7 +9,6 @@ RUN apt-get update && apt-get install -y \
     tree
 
 # Set the working directory to /sandbox
-WORKDIR /sandbox
+WORKDIR /sandbox/src
 
-# Copy the current directory contents into the container at /sandbox
-# ADD ./src /sandbox
+ENV PATH="/sandbox/bin:${PATH}"

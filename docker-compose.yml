@@ -3,4 +3,5 @@ services:
   llp:
     build: .
     volumes:
-     - ./src:/sandbox
+     - ./src:/sandbox/src
+     - ./bin:/sandbox/bin
